@@ -18,7 +18,7 @@ if uploaded_file is not None:
     if st.button('அல்ட்ரா பகுப்பாய்வைத் தொடங்கு'):
         st.info("🔍 பகுப்பாய்வு நடக்கிறது...")
         try:
-            model = genai.GenerativeModel('gemini-2.5-flash')
+            model = genai.GenerativeModel('gemini-2.0-flash')
             prompt = "Analyze this plant image and provide detailed info in Tamil regarding chemical compounds, benefits, harms, and medical uses."
             response = model.generate_content([prompt, image])
             
