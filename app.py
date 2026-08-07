@@ -2,7 +2,8 @@ import streamlit as st
 import google.generativeai as genai
 from PIL import Image
 
-GEMINI_API_KEY = "AQ.Ab8RN6L_dLzk5xhjxVlSn6U71chQl_Wy1cWsYAMQAx1JbONUjw"
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+
 genai.configure(api_key=GEMINI_API_KEY)
 
 st.set_page_config(page_title="Ultra Bio-Analyzer AI", page_icon="🔬")
